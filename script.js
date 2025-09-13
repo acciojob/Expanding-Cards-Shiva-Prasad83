@@ -26,7 +26,7 @@ function addBackgroundAndEvent(div,image){
 	div.addEventListener("click",(e)=>{
 		setAllFlexToOne();
 		e.target.style.flex=4;
-		e.target.classList.add("active-state");
+		e.target.classList.add("active");
 
 	});
 }
@@ -34,6 +34,7 @@ function setAllFlexToOne(){
 	const allInnerDivs=document.querySelectorAll(".panel");
 	allInnerDivs.forEach((div)=>{
 		div.style.flex=1;
+		div.classList.remove("active");
 	})
 }
 container.appendChild(tempDom);
