@@ -38,3 +38,7 @@ function setAllFlexToOne(){
 	})
 }
 container.appendChild(tempDom);
+const firstPanel=document.querySelector("#panel-1");
+firstPanel.classList.add("active");
+firstPanel.style.flex=4;
+
